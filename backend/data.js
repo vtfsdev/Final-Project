@@ -1,10 +1,26 @@
+import bcrypt from 'bcryptjs';
+
 const data = {
+   users:[
+      {
+         name:'Victor',
+         email: 'victor@mail.com',
+         password: bcrypt.hashSync('1234', 8),
+         isAdmin: true,
+
+      },
+      {
+         name:'John',
+         email: 'john@mail.com',
+         password: bcrypt.hashSync('1234', 8),
+         isAdmin: false,
+      },
+   ],
    products:[
       {
-         _id: '1',
          name: 'Nike Slim Shirt',
          category: 'Shirts',
-         image: '/images/p1.jpg',
+         image: '/images/yamazaki-18-year-old-whisky.jpg',
          price: 120,
          countInStock: 10,
          brand: 'Nike',
@@ -13,7 +29,6 @@ const data = {
          description: 'high quality product',
       },
       {
-         _id: '2',
          name: 'Adidas Slim Shirt',
          category: 'Shirts',
          image: '/images/p2.jpg',
@@ -25,7 +40,6 @@ const data = {
          description: 'high quality product',
       },
       {
-         _id: '3',
          name: 'Under Armour Slim Shirt',
          category: 'Shirts',
          image: '/images/p3.jpg',
@@ -37,7 +51,6 @@ const data = {
          description: 'high quality product',
       },
       {
-         _id: '4',
          name: 'Reebok Slim Shirt',
          category: 'Shirts',
          image: '/images/p4.jpg',
@@ -49,7 +62,6 @@ const data = {
          description: 'high quality product',
       },
       {
-         _id: '5',
          name: 'Puma Slim Shirt',
          category: 'Shirts',
          image: '/images/p5.jpg',
@@ -61,7 +73,6 @@ const data = {
          description: 'high quality product',
       },
       {
-         _id: '6',
          name: 'Asics Slim Shirt',
          category: 'Shirts',
          image: '/images/p6.jpg',
@@ -73,7 +84,6 @@ const data = {
          description: 'high quality product',
       },
       {
-         _id: '7',
          name: 'Callaway Slim Shirt',
          category: 'Shirts',
          image: '/images/p1.jpg',
@@ -85,7 +95,6 @@ const data = {
          description: 'high quality product',
       },
       {
-         _id: '8',
          name: 'Russell Athletic Slim Shirt',
          category: 'Shirts',
          image: '/images/p1.jpg',
@@ -97,7 +106,6 @@ const data = {
          description: 'high quality product',
       },
       {
-         _id: '9',
          name: 'Champion Slim Shirt',
          category: 'Shirts',
          image: '/images/p1.jpg',
@@ -109,7 +117,6 @@ const data = {
          description: 'high quality product',
       },
       {
-         _id: '10',
          name: 'Fila Slim Shirt',
          category: 'Shirts',
          image: '/images/p1.jpg',
